@@ -1,0 +1,18 @@
+.btn {
+  border-radius: 10px;
+  background-color: rgb(54, 90, 255);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  min-width: 125px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 25px auto 50px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgb(1, 46, 245);
+}
