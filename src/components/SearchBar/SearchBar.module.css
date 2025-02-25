@@ -1,7 +1,7 @@
 .search {
   display: flex;
   align-items: center;
-  max-width: 35vw;
+  max-width: 50vw;
   width: 100%;
   background: white;
   margin: 25px auto;
@@ -9,9 +9,11 @@
   border-radius: 10px;
   transition: 0.3s ease-in-out;
   border: 1px solid rgba(54, 91, 255, 0.337);
+  box-sizing: border-box;
 }
 
 .search input {
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   width: 100%;
   background: none;
@@ -21,6 +23,7 @@
 }
 
 .btn {
+  font-family: "Montserrat", sans-serif;
   background-color: rgb(54, 90, 255);
   color: white;
   border: none;
@@ -32,4 +35,20 @@
 }
 .btn:hover {
   background-color: rgb(1, 46, 245);
+}
+
+@media (max-width: 768px) {
+  .search {
+    max-width: 90vw;
+    padding: 8px 16px;
+  }
+
+  .search input {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 4px 10px;
+  }
 }

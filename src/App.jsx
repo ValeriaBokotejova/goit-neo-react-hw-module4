@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import css from "./App";
 import SearchBar from "./components/SearchBar/SearchBar";
 import ImageGallery from "./components/ImageGallery/ImageGallery";
 import Loader from "./components/Loader/Loader";
@@ -54,8 +53,8 @@ const App = () => {
   };
 
   return (
-    <div className={css.app}>
-      <Toaster position="top-right" />
+    <div>
+      <Toaster position="bottom-right" />
       <SearchBar onSubmit={handleSearchSubmit} />
       {error && <ErrorMessage />}
       <ImageGallery images={images} onSelect={setSelectedImage} />
